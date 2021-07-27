@@ -52,12 +52,6 @@ class WeatherData : Subject {
         observers.remove(o)
     }
 
-    override fun notifyObservers() {
-        observers.forEach {
-            it.update(data)
-        }
-    }
-
     fun setMeasurements(data: Data) {
         this.data = data
         measurementsChanged()
@@ -65,6 +59,12 @@ class WeatherData : Subject {
 
     private fun measurementsChanged() {
         notifyObservers()
+    }
+
+    override fun notifyObservers() {
+        observers.forEach {
+            it.update(data)
+        }
     }
 
 }
