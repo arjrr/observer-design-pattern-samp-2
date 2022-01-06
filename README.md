@@ -1,7 +1,6 @@
 ## Observer (_Design Pattern_)
-Exemplo de implementação do padrão de projeto _Observer_, utilizando functional (SAM) interface
 
-Linguagem: Kotlin
+Exemplo de implementação do padrão de projeto _Observer_, utilizando functional (SAM) interface
 
 ## Definição
 
